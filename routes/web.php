@@ -13,3 +13,7 @@ Route::get('/surprise', function () {
 });
 
 Route::get('/countdown', [countdownController::class, 'index']);
+
+Route::get('/weather',function() {
+    return view('weather');
+});
